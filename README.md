@@ -1,24 +1,8 @@
-# README
+aslmlkm,
+with link below :
+http://users.dsic.upv.es/asignaturas/fade/inf/en/unit06ex.pdf 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Please do excercises with title below : 
+1. September 2006
+2. June 2008
+3. June 2010
