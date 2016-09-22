@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Services</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Last serviced</th>
+      <th>Next service</th>
+      <th>Duration day</th>
+      <th>Duration km</th>
+      <th>Last serviced km</th>
+      <th>Next service km</th>
+      <th>Major repair</th>
+      <th>General repair</th>
+      <th>Electrical</th>
+      <th>Electronic</th>
+      <th>Engine</th>
+      <th>Heating cooling</th>
+      <th>Steering suspension</th>
+      <th>Undercar</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @services.each do |service| %>
+      <tr>
+        <td><%= service.last_serviced %></td>
+        <td><%= service.next_service %></td>
+        <td><%= service.duration_day %></td>
+        <td><%= service.duration_km %></td>
+        <td><%= service.last_serviced_km %></td>
+        <td><%= service.next_service_km %></td>
+        <td><%= service.major_repair %></td>
+        <td><%= service.general_repair %></td>
+        <td><%= service.electrical %></td>
+        <td><%= service.electronic %></td>
+        <td><%= service.engine %></td>
+        <td><%= service.heating_cooling %></td>
+        <td><%= service.steering_suspension %></td>
+        <td><%= service.undercar %></td>
+        <td><%= link_to 'Show', service %></td>
+        <td><%= link_to 'Edit', edit_service_path(service) %></td>
+        <td><%= link_to 'Destroy', service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Service', new_service_path %>

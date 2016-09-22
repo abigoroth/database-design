@@ -1,0 +1,2 @@
+json.extract! service, :id, :last_serviced, :next_service, :duration_day, :duration_km, :last_serviced_km, :next_service_km, :major_repair, :general_repair, :electrical, :electronic, :engine, :heating_cooling, :steering_suspension, :undercar, :created_at, :updated_at
+json.url service_url(service, format: :json)

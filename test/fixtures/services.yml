@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  last_serviced: 2016-09-22
+  next_service: 2016-09-22
+  duration_day: 1
+  duration_km: 1
+  last_serviced_km: 1
+  next_service_km: 1
+  major_repair: MyString
+  general_repair: MyString
+  electrical: MyString
+  electronic: MyString
+  engine: MyString
+  heating_cooling: MyString
+  steering_suspension: MyString
+  undercar: MyString
+
+two:
+  last_serviced: 2016-09-22
+  next_service: 2016-09-22
+  duration_day: 1
+  duration_km: 1
+  last_serviced_km: 1
+  next_service_km: 1
+  major_repair: MyString
+  general_repair: MyString
+  electrical: MyString
+  electronic: MyString
+  engine: MyString
+  heating_cooling: MyString
+  steering_suspension: MyString
+  undercar: MyString

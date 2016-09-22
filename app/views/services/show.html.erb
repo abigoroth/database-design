@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Last serviced:</strong>
+  <%= @service.last_serviced %>
+</p>
+
+<p>
+  <strong>Next service:</strong>
+  <%= @service.next_service %>
+</p>
+
+<p>
+  <strong>Duration day:</strong>
+  <%= @service.duration_day %>
+</p>
+
+<p>
+  <strong>Duration km:</strong>
+  <%= @service.duration_km %>
+</p>
+
+<p>
+  <strong>Last serviced km:</strong>
+  <%= @service.last_serviced_km %>
+</p>
+
+<p>
+  <strong>Next service km:</strong>
+  <%= @service.next_service_km %>
+</p>
+
+<p>
+  <strong>Major repair:</strong>
+  <%= @service.major_repair %>
+</p>
+
+<p>
+  <strong>General repair:</strong>
+  <%= @service.general_repair %>
+</p>
+
+<p>
+  <strong>Electrical:</strong>
+  <%= @service.electrical %>
+</p>
+
+<p>
+  <strong>Electronic:</strong>
+  <%= @service.electronic %>
+</p>
+
+<p>
+  <strong>Engine:</strong>
+  <%= @service.engine %>
+</p>
+
+<p>
+  <strong>Heating cooling:</strong>
+  <%= @service.heating_cooling %>
+</p>
+
+<p>
+  <strong>Steering suspension:</strong>
+  <%= @service.steering_suspension %>
+</p>
+
+<p>
+  <strong>Undercar:</strong>
+  <%= @service.undercar %>
+</p>
+
+<%= link_to 'Edit', edit_service_path(@service) %> |
+<%= link_to 'Back', services_path %>

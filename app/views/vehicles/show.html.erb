@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @vehicle.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @vehicle.vmodel %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @vehicle.year %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @vehicle.month %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @vehicle.type %>
+</p>
+
+<p>
+  <strong>Colour:</strong>
+  <%= @vehicle.colour %>
+</p>
+
+<p>
+  <strong>Rego num:</strong>
+  <%= @vehicle.rego_num %>
+</p>
+
+<p>
+  <strong>Plat num:</strong>
+  <%= @vehicle.plat_num %>
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @vehicle.capacity %>
+</p>
+
+<p>
+  <strong>Num of passenger:</strong>
+  <%= @vehicle.num_of_passenger %>
+</p>
+
+<p>
+  <strong>Transmission:</strong>
+  <%= @vehicle.transmission %>
+</p>
+
+<p>
+  <strong>Fuel type:</strong>
+  <%= @vehicle.fuel_type %>
+</p>
+
+<p>
+  <strong>Mileage:</strong>
+  <%= @vehicle.mileage %>
+</p>
+
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

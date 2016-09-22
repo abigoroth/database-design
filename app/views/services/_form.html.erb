@@ -1,0 +1,87 @@
+<%= form_for(service) do |f| %>
+  <% if service.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(service.errors.count, "error") %> prohibited this service from being saved:</h2>
+
+      <ul>
+      <% service.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :last_serviced %>
+    <%= f.date_select :last_serviced %>
+  </div>
+
+  <div class="field">
+    <%= f.label :next_service %>
+    <%= f.date_select :next_service %>
+  </div>
+
+  <div class="field">
+    <%= f.label :duration_day %>
+    <%= f.number_field :duration_day %>
+  </div>
+
+  <div class="field">
+    <%= f.label :duration_km %>
+    <%= f.number_field :duration_km %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_serviced_km %>
+    <%= f.number_field :last_serviced_km %>
+  </div>
+
+  <div class="field">
+    <%= f.label :next_service_km %>
+    <%= f.number_field :next_service_km %>
+  </div>
+
+  <div class="field">
+    <%= f.label :major_repair %>
+    <%= f.text_field :major_repair %>
+  </div>
+
+  <div class="field">
+    <%= f.label :general_repair %>
+    <%= f.text_field :general_repair %>
+  </div>
+
+  <div class="field">
+    <%= f.label :electrical %>
+    <%= f.text_field :electrical %>
+  </div>
+
+  <div class="field">
+    <%= f.label :electronic %>
+    <%= f.text_field :electronic %>
+  </div>
+
+  <div class="field">
+    <%= f.label :engine %>
+    <%= f.text_field :engine %>
+  </div>
+
+  <div class="field">
+    <%= f.label :heating_cooling %>
+    <%= f.text_field :heating_cooling %>
+  </div>
+
+  <div class="field">
+    <%= f.label :steering_suspension %>
+    <%= f.text_field :steering_suspension %>
+  </div>
+
+  <div class="field">
+    <%= f.label :undercar %>
+    <%= f.text_field :undercar %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

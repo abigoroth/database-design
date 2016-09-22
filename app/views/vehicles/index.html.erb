@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Vehicles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Year</th>
+      <th>Month</th>
+      <th>Type</th>
+      <th>Colour</th>
+      <th>Rego num</th>
+      <th>Plat num</th>
+      <th>Capacity</th>
+      <th>Num of passenger</th>
+      <th>Transmission</th>
+      <th>Fuel type</th>
+      <th>Mileage</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vehicles.each do |vehicle| %>
+      <tr>
+        <td><%= vehicle.make %></td>
+        <td><%= vehicle.vmodel %></td>
+        <td><%= vehicle.year %></td>
+        <td><%= vehicle.month %></td>
+        <td><%= vehicle.type %></td>
+        <td><%= vehicle.colour %></td>
+        <td><%= vehicle.rego_num %></td>
+        <td><%= vehicle.plat_num %></td>
+        <td><%= vehicle.capacity %></td>
+        <td><%= vehicle.num_of_passenger %></td>
+        <td><%= vehicle.transmission %></td>
+        <td><%= vehicle.fuel_type %></td>
+        <td><%= vehicle.mileage %></td>
+        <td><%= link_to 'Show', vehicle %></td>
+        <td><%= link_to 'Edit', edit_vehicle_path(vehicle) %></td>
+        <td><%= link_to 'Destroy', vehicle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vehicle', new_vehicle_path %>
